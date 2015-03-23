@@ -1,0 +1,15 @@
+<launch>
+
+<group ns="Ts">
+    <param name="Ts" value="0.1" />
+    </group>
+
+<group ns="IP">
+    <param name="ip_board" value="127.0.0.1" />
+    <param name="ip_pc" value="127.0.0.1 " />
+    </group>
+
+  <node pkg="rapros" name="rapros" type="rapros.py" output="screen">
+  </node>
+
+</launch>

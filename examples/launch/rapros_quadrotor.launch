@@ -1,0 +1,15 @@
+<launch>
+
+<group ns="Ts">
+    <param name="Ts" value="0.1" />
+    </group>
+
+<group ns="IP">
+    <param name="ip_board" value="192.168.10.53" />
+    <param name="ip_pc" value="192.168.149.154" />
+    </group>
+
+  <node pkg="rapros_quadrotor" name="rapros_quadrotor" type="rapros_quadrotor.py" output="screen">
+  </node>
+
+</launch>

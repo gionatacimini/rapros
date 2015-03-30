@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 #The rapros package is a native ROS-Simulink package, that allows Rapid Prototyping
 #task. Rapid Prototyping is the set of procedures which helps to design and to develop 
 #control algorithms for robotics applications, it is a general concept which includes 
@@ -35,10 +37,6 @@
 # IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
-
-
-#!/usr/bin/env python
 import rospy
 import numpy as np
 import sys, struct
@@ -130,7 +128,6 @@ def Callback(data):
 
 def rapROS():
 
-
 	version=rospy.get_param("/rosdistro").rstrip()
 
 	ts = rospy.get_param('Ts')
@@ -148,14 +145,9 @@ def rapROS():
 	else:
 		pub = rospy.Publisher('U', Float32MultiArray,queue_size=10) ## for hydro and newest ros versions
 
-
-
 	in_data= {}
-	
 	r = rospy.Rate(freq)
-
 	sock_rec.bind((IPB,PORTA))
-
 	while not rospy.is_shutdown():		
 
 			X_data=receive_X() #receive X state data from simulink

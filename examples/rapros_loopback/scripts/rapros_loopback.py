@@ -51,7 +51,7 @@ U_data = Float32MultiArray()#
 #The maximum amount of data to receive at a time
 MAX_DATA_SIZE = 2048
 #The port to send/receive data on
-PORT = 667
+PORT = 9091
 PORTA = 25001
 #Get the IP address of this computer
 IPB= gethostbyname('127.0.0.1')

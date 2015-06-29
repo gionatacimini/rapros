@@ -9,7 +9,7 @@
     <param name="ip_pc" value="192.168.149.154" />
     </group>
 
-  <node pkg="rapros_quadrotor" name="rapros_quadrotor" type="rapros_quadrotor.py" output="screen">
+  <node pkg="rapros" name="rapros_quadrotor" type="rapros_quadrotor.py" output="screen">
   </node>
 
 </launch>
